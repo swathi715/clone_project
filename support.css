@@ -1,4 +1,9 @@
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+margin:0;
+padding:0;
+box-sizing:
+border-box;
+}
 html,body{margin:0;padding:0;background:#121212;font-family:Montserrat,sans-serif;width:100%;overflow-x:hidden;}
 .header{background:black;height:70px;min-height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 30px;position:sticky;top:0;z-index:100;flex-wrap:nowrap;}
 .logo3{color:white;font-weight:700;font-size:28px;display:flex;align-items:center;gap:8px;flex-shrink:0;}
@@ -6,6 +11,9 @@ html,body{margin:0;padding:0;background:#121212;font-family:Montserrat,sans-seri
 .nav-left a{color:white;text-decoration:none;font-weight:700;font-size:15px;}
 .nav-right{display:flex;align-items:center;gap:20px;flex-shrink:0;margin-left:auto;}
 .login-btn{background:#1ed760;color:black;padding:12px 26px;border-radius:30px;font-weight:700;border:none;cursor:pointer;}
+.login-btn show-m a{
+    text-decoration: none;
+}
 .hamburger{display:none;cursor:pointer;color:white;font-size:22px;}
 .menu-overlay{display:none;}
 .show-m{display:none !important;}

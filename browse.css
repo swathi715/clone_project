@@ -255,6 +255,19 @@ letter-spacing: 1.2px;
   color:white;
   transform:scale(1.04);
 }
+.rightside h2 a{
+  color:white;
+  text-decoration: none;
+}
+
+.rightside h3 a{
+  color:white;
+  text-decoration: none;
+}
+.login a{
+  color: #000;
+  text-decoration: none;
+}
 .install-app
 {
   display: flex;
@@ -658,15 +671,81 @@ color:white;
 }
 
 
-.spotify-footer-real{ background: #121212; padding: 50px 32px 30px 32px; margin-top: 40px; width: 100%; }
-.footer-grid{ display: flex; justify-content: space-between; gap: 20px; }
-.f-col{ display: flex; flex-direction: column; min-width: 150px; }
-.f-col h4{ color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 10px; }
-.f-col p{ color: #a7a7a7; font-size: 15px; font-weight: 400; line-height: 35px; cursor: pointer; }
-.f-col p:hover{ color: #fff; text-decoration: underline; }
-.f-social{ display: flex; gap: 14px; margin-left: auto; }
-.f-social a{ width: 42px; height: 42px; background: #292929; border-radius: 50%; display: grid; place-items: center; color: white; font-size: 18px; cursor: pointer; }
-.f-social a:hover{ background: #727272; }
-.f-line{ height: 1px; background: #2a2a2a; margin: 40px 0 30px 0; }
-.f-copy{ color: #a7a7a7; font-size: 14px; text-align: right; }
 
+
+
+
+
+
+
+
+/* WIDTH EXCESS KU FINAL FIX */
+html{
+  overflow-x: hidden;
+}
+body{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.container{
+  max-width: 100vw !important;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.div1, .second-section{
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.main{
+  min-width: 0 !important; /* ithu than main da, itha pota excess varathu */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* PHONE / CHINNA SCREEN KU */
+@media (max-width: 900px){
+  body{
+    overflow-y: auto !important;
+    height: auto !important;
+  }
+  .container{
+    flex-direction: column !important;
+    height: auto !important;
+    gap: 8px !important;
+    padding: 0 8px;
+  }
+  .div1{
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 60px !important;
+  }
+  .second-section{
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .main{
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    height: auto !important;
+    min-height: 60vh;
+  }
+  .cards{
+    grid-template-columns: repeat(2, 1fr) !important; /* 3 iruntha phone la excess varum */
+  }
+  .cards img{
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 600px){
+  .search-box{ display: none !important; }
+  .cards{
+    grid-template-columns: 1fr !important;
+  }
+  .rightside h2{ display: none !important; }
+}

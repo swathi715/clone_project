@@ -362,6 +362,33 @@ background:#5a5a5a; border-radius:10px; border:2px solid #121212; }
 .signup-free:hover{
   transform:scale(1.05);
 }
+ .play-wrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #1DB954;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+.play-icon {
+  color: black;
+  font-size: 22px;
+  pointer-events: none; /* icon click ah block pannathu */
+}
+
+.play-wrapper audio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.01; /* 0 potta mobile la click aagathu, 0.01 podu */
+}
 
 
 /* ========== MEDIA QUERY - FINAL ========== */

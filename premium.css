@@ -443,6 +443,7 @@ font-family:Arial; color:white;}
   padding:7px 14px; border-radius:20px;
   font-size:12px; font-weight:700; z-index:5;
   font-family:Arial;
+
 }
 .right{color:white;}
 .right h1{font-size:38px; line-height:1.1; font-weight:800;}
@@ -627,7 +628,7 @@ font-family:Arial; color:white;}
 }
 .card{
   object-fit:cover;
-  border-radius:10px;
+  /* border-radius:10px; */
   flex-shrink:0;
 }
 
